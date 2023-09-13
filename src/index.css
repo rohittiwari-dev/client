@@ -1,0 +1,284 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Outfit", sans-serif;
+	transition: width 1s ease-in-out;
+	transition: max-width 1s ease-in-out;
+	transition: min-width 1s ease-in-out;
+}
+html,
+body,
+main {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+main {
+	overflow-y: auto;
+}
+
+.container {
+	width: 100vw;
+	min-height: 90%;
+	max-height: fit-content;
+}
+.container .error {
+	padding: 1rem 6rem;
+	width: 100%;
+	text-align: center;
+	color: red;
+	font-weight: 500;
+}
+.container-fixed {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	overflow-y: auto;
+}
+a {
+	text-decoration: none;
+	color: rgb(90, 90, 90);
+}
+a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.2rem;
+}
+
+input {
+	padding: 0.7rem 1rem;
+	outline: none;
+	width: 100%;
+	margin: 0.5rem 0;
+	border-radius: 10px;
+	font-size: 0.9rem;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: rgb(77, 77, 77);
+	border: rgba(128, 128, 128, 0.63) 1px solid;
+}
+textarea {
+	padding: 0.7rem 1rem;
+	outline: none;
+	width: 100%;
+	height: 8rem;
+	margin: 0.5rem 0;
+	border-radius: 10px;
+	resize: none;
+	font-size: 0.9rem;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	color: rgb(77, 77, 77);
+	border: rgba(128, 128, 128, 0.63) 1px solid;
+}
+
+.flex {
+	display: flex;
+}
+
+.gap-1 {
+	gap: 1rem;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+.flex-col {
+	flex-direction: column;
+}
+.justify-start {
+	justify-content: start;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-end {
+	justify-content: end;
+}
+.items-center {
+	align-items: center;
+}
+.justify-around {
+	justify-content: space-around;
+}
+.items-start {
+	align-items: start;
+}
+.items-end {
+	align-items: end;
+}
+.items-self-start {
+	align-self: flex-start;
+}
+.items-self-end {
+	align-self: flex-end;
+}
+.justify-self-start {
+	justify-self: flex-start;
+}
+.justify-self-end {
+	justify-self: flex-end;
+}
+
+.mt-1 {
+	margin-top: 1rem;
+}
+.create-bar {
+	padding: 1rem 5rem;
+	border-top: 1px solid rgba(206, 206, 206, 0.5);
+	border-bottom: 1px solid rgba(206, 206, 206, 0.5);
+}
+.create-bar .btn {
+	border-radius: 5px;
+	box-shadow: 0 0 0.2rem rgba(65, 65, 65, 0.5);
+	margin: 0 0.4rem;
+	padding: 0.2rem 0.5rem;
+	background-color: white;
+}
+.create-bar .btn:hover {
+	color: rgb(103, 156, 255);
+	background-color: rgb(248, 248, 248);
+	text-decoration: none;
+}
+.btn {
+	border: none;
+	outline: nonde;
+	font-size: 1.1rem;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 600;
+	color: rgb(73, 73, 73);
+	background: none;
+	transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+	color: cornflowerblue;
+	text-decoration: none;
+}
+
+.btn.fill-blue {
+	padding: 1rem 0.7rem;
+	background-color: cornflowerblue;
+	border-radius: 100vh;
+	word-break: keep-all;
+	width: max-content;
+	color: white;
+}
+.btn.fill-blue:hover {
+	background-color: rgb(110, 157, 245);
+	box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+.btn.primary {
+	color: cornflowerblue;
+}
+.btn.primary:hover {
+	color: rgb(63, 127, 245);
+	scale: 1.05 !important;
+}
+.btn.danger {
+	color: rgb(209, 118, 118);
+}
+.btn.danger:hover {
+	color: rgb(235, 39, 39);
+	scale: 1.05;
+}
+.btn.active {
+	background-color: rgb(38, 127, 211);
+	color: white;
+}
+.p-0\.5 {
+	padding: 0.5rem;
+}
+.p-1 {
+	padding: 1rem;
+}
+.py-0\.5 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.px-32 {
+	padding: 1rem 6rem;
+}
+
+.h-full {
+	height: 100%;
+}
+.w-full {
+	width: 100%;
+}
+
+.my-0\.5 {
+	margin: 0.5rem 0;
+}
+.px-0\.5 {
+	padding: 0 0.5rem;
+}
+
+.link {
+	color: rgb(3, 121, 255);
+	font-size: 0.95rem;
+	font-weight: 500;
+}
+
+.hidden {
+	visibility: hidden;
+}
+.hidden-not {
+	visibility: visible;
+}
+
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.right-0 {
+	right: 0;
+}
+.left-0 {
+	left: 0;
+}
+.top-0 {
+	top: 0;
+}
+.bottom-0 {
+	bottom: 0;
+}
+
+.text-primary {
+	color: cornflowerblue;
+}
+.text-gray-shade {
+	color: rgb(85, 85, 85);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Style your custom spinner buttons/icons */
+input[type="number"] {
+	padding-right: 30px; /* Add space for custom spinner icon */
+}
+.border-none {
+	border: none;
+}
+bg-none {
+	background-color: transparent;
+	background: transparent;
+}
+
+.react-calendar {
+	background-color: transparent;
+}
+
+/* Make the calendar cells and text transparent */
+.react-calendar__tile {
+	background-color: transparent;
+	color: inherit; /* Use the parent element's text color */
+}

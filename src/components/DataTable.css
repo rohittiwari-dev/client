@@ -1,0 +1,53 @@
+.custom-appointment-table {
+	width: 100%;
+	margin: 20px 0;
+	height: 480px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.custom-appointment-table input[type="text"] {
+	padding: 8px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.custom-appointment-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.custom-appointment-table th,
+.custom-appointment-table td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+.custom-appointment-table th {
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+.custom-appointment-table tr:hover {
+	background-color: #f5f5f5;
+}
+
+.custom-appointment-table .pagination {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.custom-appointment-table .pagination button {
+	margin: 0 5px;
+	padding: 5px 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.custom-appointment-table .pagination button.active {
+	background-color: #0056b3;
+}

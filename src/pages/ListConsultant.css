@@ -1,0 +1,34 @@
+.section.list-consultant {
+	min-width: 100%;
+	max-width: 100%;
+	color: rgb(85, 85, 85);
+	min-height: max-content;
+	border-radius: 0;
+	border: none;
+	margin: 2rem;
+	background-color: none;
+	box-shadow: none;
+}
+.section.list-consultant .top {
+	width: fit-content;
+	background-color: white;
+	border-radius: 10px;
+	border: 1px solid cornflowerblue;
+	padding: 0.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+}
+.section.list-consultant .top:hover {
+	scale: 1.02;
+	box-shadow: 0 0 0.5rem rgba(21, 51, 105, 0.473);
+}
+.section.list-consultant .top .consultant-img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 5px;
+	border: 1px solid coral;
+	padding: 0.1rem;
+}

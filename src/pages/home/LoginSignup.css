@@ -1,0 +1,58 @@
+.section {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section .brand {
+	text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3);
+	color: rgb(59, 59, 59);
+}
+.section.flex-col .greetings {
+	font-size: 1.5rem;
+	color: rgb(59, 59, 59);
+	font-weight: bold;
+	margin: 0.5rem 0;
+}
+
+.card {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 0.15rem rgba(100, 100, 100, 0.4);
+	border: rgba(100, 148, 237, 0.5) 2px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.card.fix {
+	min-width: 280px;
+	min-height: 300px;
+	padding: 1.75rem;
+	margin: 1rem 0;
+	max-width: 400px;
+}
+
+.btn.fill-blue.pm {
+	padding: 0.5rem 1.5rem;
+}
+.btn.fill-blue.pm-1 {
+	padding: 0 1.5rem;
+}
+.card .label-login {
+	margin-top: 2rem;
+	font-weight: 600;
+}
+.card .note {
+	text-align: center;
+	margin: 1.5rem 0;
+	/* word-wrap: ; */
+	text-wrap: balance;
+	width: 100%;
+}
+.section.flex-col .greetings.data {
+	font-size: 1.1rem;
+	color: rgb(59, 59, 59);
+	font-weight: 300;
+	margin: 0.5rem 0;
+}

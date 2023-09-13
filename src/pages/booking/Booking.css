@@ -1,0 +1,189 @@
+.bg-open {
+	background-color: rgb(244, 248, 250);
+}
+
+.section.booking {
+	min-width: 50vw;
+	max-width: 90vw;
+	color: rgb(85, 85, 85);
+	min-height: max-content;
+	border-radius: 10px;
+	border: 1px solid cornflowerblue;
+	margin: 2rem;
+	background-color: white;
+	box-shadow: 0 0 0.5rem rgba(78, 78, 78, 0.4);
+}
+.section.booking .top,
+.section.booking .bottom {
+	width: 100%;
+	height: 100%;
+	padding: 2rem;
+}
+.section.booking .bottom {
+	min-height: 50vh;
+	overflow-y: auto;
+}
+
+.section.booking .top {
+	border-bottom: 1px solid rgba(100, 148, 237, 0.596);
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height: fit-content;
+	background-color: rgba(236, 236, 236, 0.795);
+}
+.section.booking .top div {
+	margin: 0.5rem 0;
+}
+
+.section.booking .top .consultant-img {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 5px;
+	border: 1px solid coral;
+	padding: 0.1rem;
+}
+.section.booking .top .content {
+	height: 100%;
+	width: 100%;
+	& div {
+		display: block;
+		width: 50%;
+		padding: 0;
+		margin: 0;
+	}
+	& div p,
+	& div h2 {
+		margin: 0.2rem 0;
+	}
+	& .verified {
+		color: rgb(0, 129, 214);
+	}
+}
+.section.booking .top .content .description {
+	width: 60%;
+	text-align: center;
+	font-size: larger;
+	padding: 1rem 5rem;
+}
+
+/* Booking Page */
+.section.booking .top {
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+}
+.section.booking .top .back-icon {
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.section.booking .top .back-icon:hover {
+	fill: rgb(212, 216, 219);
+	color: cornflowerblue;
+	filter: drop-shadow(0 0 0.3rem rgba(100, 148, 237, 0.596));
+}
+
+.section.booking .top div {
+	display: flex;
+	gap: 0.5rem;
+}
+.section.booking .top div p {
+	width: 90%;
+}
+
+.section.booking .bottom .booking .form-element {
+	margin: 0.5rem 0;
+	width: 25rem;
+}
+.section.booking .bottom .booking .form-element label {
+	font-size: large;
+	font-weight: 500;
+}
+.section.booking .bottom .booking .form-element textarea {
+	width: 100%;
+	height: 6rem;
+	resize: none;
+}
+.section.booking .bottom .booking p.btn {
+	color: rgb(64, 95, 136);
+}
+.section.booking .bottom .booking p.btn:hover {
+	color: cornflowerblue;
+}
+.section.booking .bottom .booking .time-slots {
+	overflow: hidden;
+	overflow-y: auto;
+	padding: 0 2rem;
+	height: 50vh;
+}
+.section.booking .bottom .booking .time-slots .slots {
+	border-radius: 10px;
+	background-color: transparent;
+	border: 1px solid cornflowerblue;
+	color: cornflowerblue;
+	transition: all 0.3s ease-in-out;
+}
+.section.booking .bottom .booking .time-slots .slots:hover {
+	background-color: cornflowerblue;
+	color: white;
+}
+
+/* Confirmation page css */
+
+.confirmation-container {
+	text-align: center;
+	padding: 20px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+}
+
+/* Greeting section */
+.greeting h1 {
+	font-size: 36px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.greeting p {
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/* Appointment details section */
+.appointment-details h2 {
+	font-size: 24px;
+	color: #007bff;
+	margin-bottom: 10px;
+}
+
+.appointment-details p {
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 15px;
+}
+
+/* Button styling */
+.button-container {
+	margin-top: 30px;
+}
+
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}

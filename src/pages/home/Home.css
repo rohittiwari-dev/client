@@ -1,0 +1,59 @@
+.hero-section {
+	width: 100%;
+	min-height: 80%;
+	display: flex;
+	margin: 0.5rem 0;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 0.5rem 6rem;
+	padding-top: 2rem;
+}
+.right,
+.left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100%;
+}
+.left {
+	align-items: start;
+	gap: 2rem;
+	text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .left .hero-title {
+	font-size: 3.5rem;
+	font-weight: 900;
+}
+.hero-section .left .input-email {
+	border: cornflowerblue 2px solid;
+	width: auto;
+	border-radius: 100vh;
+	display: flex;
+	position: relative;
+	height: 3.2rem;
+	box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.3);
+	justify-content: space-between;
+}
+.hero-section .left .input-email .btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0.8rem 1rem;
+}
+.hero-section .left .input-email input {
+	width: auto;
+	border-radius: 100vh;
+	outline: none;
+	border: none;
+	background: none;
+	background-color: transparent;
+	font-size: 1rem;
+	font-weight: 600;
+	color: rgb(73, 121, 209);
+	padding: 0.5rem 1rem;
+	padding-right: 6rem;
+}
