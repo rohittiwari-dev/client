@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"homepage": ".",
+	"homepage": "https://scheduler-frontend-mdvv.onrender.com",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
