@@ -76,7 +76,7 @@ const Header = ({ userStore }) => {
 								localStorage.removeItem("notFirstLogin");
 								resetUserData();
 							}}
-							to={`${import.meta.env.VITE_BASE_URL}/auth/logout`}
+							to={`${import.meta.env.VITE_SERVER_URL}/auth/logout`}
 							className="btn fill-blue pm"
 						>
 							Logout

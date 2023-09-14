@@ -5,9 +5,16 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
 	plugins: [react()],
 	server: {
-		proxy: 'https://schedular-backend.onrender.com/api/v1',
-		watch:{
-			usePolling:true,
-		}
+		proxy: {
+			// Proxy requests to '/api' to your API server
+			"/api": {
+				target: "https://schedular-backend.onrender.com/api/v1", // Replace with the URL of your API server
+				changeOrigin: true,
+				rewrite: (path) => path.replace(/^\/api/, ""),
+			},
+		},
+		watch: {
+			usePolling: true,
+		},
 	},
 });

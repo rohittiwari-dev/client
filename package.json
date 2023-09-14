@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"proxy":"https://schedular-backend.onrender.com/api/v1",
+	"homepage": ".",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
@@ -24,6 +24,7 @@
 		"react-router-dom": "^6.15.0",
 		"react-text-mask": "^5.5.0",
 		"timeago.js": "^4.0.2",
+		"vite-plugin-mock": "^3.0.0",
 		"vite-plugin-rewrite-all": "^1.0.1"
 	},
 	"devDependencies": {
