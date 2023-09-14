@@ -27,7 +27,7 @@ import ServiceBooking from "./pages/booking/ServiceBooking";
 import Confirmation from "./pages/booking/Confirmation";
 
 // Axios Base url Declaration
-axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+// axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
 
 const App = () => {
 	usePreventNumberInputScroll();
