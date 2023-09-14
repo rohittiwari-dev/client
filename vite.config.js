@@ -7,8 +7,11 @@ export default defineConfig({
 	plugins: [react(), pluginRewriteAll()],
 	server: {
 		proxy: {
-			target: "https://schedular-backend.onrender.com/api/v1" ,
-			changeOrigin: true,
-		},
+	            '/api/v1': {
+	                target: 'https://schedular-backend.onrender.com/api/v1',
+	                changeOrigin: true,
+	                secure: false
+	            }
+	        }
 	},
 });
