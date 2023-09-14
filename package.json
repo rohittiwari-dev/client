@@ -3,7 +3,7 @@
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
-	"proxy":{"/api/v1" : "https://schedular-backend.onrender.com/api/v1"},
+	"proxy":"https://schedular-backend.onrender.com/api/v1",
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
