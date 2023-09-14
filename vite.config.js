@@ -6,5 +6,8 @@ export default defineConfig({
 	plugins: [react()],
 	server: {
 		proxy: 'https://schedular-backend.onrender.com/api/v1',
+		watch:{
+			usePolling:true,
+		}
 	},
 });
