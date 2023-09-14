@@ -6,12 +6,6 @@ import pluginRewriteAll from "vite-plugin-rewrite-all";
 export default defineConfig({
 	plugins: [react(), pluginRewriteAll()],
 	server: {
-		proxy: {
-	            '/api/v1': {
-	                target: 'https://schedular-backend.onrender.com/api/v1',
-	                changeOrigin: true,
-	                secure: false
-	            }
-	        }
+		proxy: 'https://schedular-backend.onrender.com/api/v1',
 	},
 });
