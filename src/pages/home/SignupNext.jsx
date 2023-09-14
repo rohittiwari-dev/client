@@ -19,7 +19,7 @@ const SignupNext = () => {
 				<div
 					onClick={() => {
 						window.open(
-							`${import.meta.env.VITE_BASE_URL}/auth/google/callback`,
+							`${import.meta.env.VITE_SERVER_URL}/auth/google/callback`,
 							"_self"
 						);
 					}}
